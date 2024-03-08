@@ -6,17 +6,22 @@
 import 'dart:io';
 void main()
 {
+  List <String>indianState=[];
   stdout.write("Enter the number of State : ");
   int a = int.parse(stdin.readLineSync()!);
-  for (i=1;i<=a;i++)
+  for (int i=1;i<=a;i++)
   {
+    
     stdout.write("Enter the state name : ");
-    String sname = stdin.readLineSync()!;
-    indian.add(sname);
+    String state = stdin.readLineSync()!;
+    indianState.add(state);
     
 
   }
 
-  int a 
+  for (String state in indianState)
+  {
+    print(state);
+  }
 
 }
