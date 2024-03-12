@@ -1,20 +1,28 @@
 //9. Wap to enter a number and check the no is prime or not?
 import 'dart:io';
-void main()
+main()
 {
-    stdout.write("Enter the Number : ");
-    int n = int.parse(stdin.readLineSync()!);
-    
-    if ((n%0==0 &&n%3==0 && n%5==0 && n%7==0 && n%11==0) && (n==2 || n==3 ||n==5 || n==7 ||n==11 ||n==13 ))
+  stdout.write("Enter the Number : ");
+  int n = int.parse(stdin.readLineSync()!);
+  
+  // while(n>=1)
+  // {
+    for (int i=2;i<n;i++)
     {
-      print("Number is Prime  : $n ");
-    }
-    else 
-    {
-     print("Number is Not Prime : $n");
-    }
-    
-   
-    
+      if(n%i==0)
+      {
+        print("$n Number is not Prime.");
+        return true;
+       
+      }
+      else
+      {
+        print("$n Number is Prime.");
+        return false;
 
-}
+
+      }
+      
+    }
+  
+  }
