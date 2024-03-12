@@ -5,8 +5,8 @@ main()
   stdout.write("Enter the Number : ");
   int n = int.parse(stdin.readLineSync()!);
   
-  // while(n>=1)
-  // {
+  while(n>=1)
+  {
     for (int i=2;i<n;i++)
     {
       if(n%i==0)
